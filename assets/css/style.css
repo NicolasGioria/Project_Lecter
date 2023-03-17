@@ -1,10 +1,213 @@
 :root {
-    --primary-color: ;
-    --secondary-color: ;
-    --light-color: ;
-    --dark- color: ;
+    --primary-color: #A6A6A6;
+    --secondary-color: #595959;
+    --light-color: #D9D9D9;
+    --dark-color: #121212;
 
 
---font-primary: ;
---font-
+    --font-mainTitle: "Italianno", cursive;
+    --font-title: "Cormorant", serif;
+    --font-text: "Libre Franklin", sans-serif;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    box-shadow: 0 0 4px;
+
+}
+
+button {
+    padding: 0.5rem;
+
+}
+
+.picture h1 {
+    color: white;
+    margin-left: 0.4rem;
+    margin-top: 0.1rem;
+    font-size: 45px;
+    font-family: var(--font-mainTitle);
+
+}
+
+.picture {
+    background-image: url("../photo/hannibal.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    width: 50%;
+
+    position: relative;
+}
+
+.contact-button {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.layer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#menu {
+
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    text-align: center;
+    box-shadow: 0 0 4px;
+
+    height: 60px;
+    margin-bottom: 1rem;
+    ;
+}
+
+.menu {
+
+    width: 30%;
+    margin: auto;
+    background-color: #fbfbfb;
+    padding: 3rem;
+    border: 1px solid;
+}
+
+.menu p {
+    margin: 0;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: right;
+    margin: 10px;
+    font-family: var(--font-mainTitle);
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.12);
+}
+
+h3 {
+    text-decoration: underline;
+    margin: 0;
+    font-family: var(--font-text)
+}
+
+.layer h1 {
+    text-align: right;
+    margin-right: 2rem;
+    font-size: 40px;
+    font-family: var(--font-mainTitle);
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+
+}
+
+.social-media {
+    flex-direction: row;
+    align-items: right;
+}
+
+a {
+    font-family: var(--font-title);
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+/*---------------------------------------------ASSIETTE---------------------------------*/
+.plate {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    background-color: #e4e4e4;
+    border-radius: 50%;
+    justify-content: center;
+    font-size: 15px;
+    box-shadow: 2px 2px 8px 2px #000;
+    padding: 80px;
+    margin: 20px;
+}
+
+.inner_plate {
+    align-self: center;
+    border-radius: 50%;
+    height: fit-content;
+    width: fit-content;
+    border: #dddddd solid 2px;
+    background-color: #d2d2d2;
+    font-size: 1rem;
+    box-shadow: 0 0 10px 10px #cfcfcf;
+    justify-content: center;
+    padding: 194px;
+    text-align: center;
+}
+
+.inner_plate img {
+    margin-top: 5px;
+    max-width: 100%;
+    max-height: 150px;
+    border-radius: 40%;
+    z-index: 1;
+    position: relative;
+    margin: 25px 2px;
+}
+
+.inner_plate h3 {
+    max-width: 250px;
+    padding: 0 15px;
+}
+
+.inner_plate::after {
+    content: "";
+    position: absolute;
+    background-color: #e3e3e3;
+    height: 40%;
+    width: 20%;
+    display: block;
+    border-radius: 50%;
+    transform: rotate(34deg);
+    right: 21%;
+    top: 42%;
+    font-size: inherit;
+    box-shadow: -0.6em 0.2em 1em 1em #e3e3e3;
+}
+
+/*-----------------------------------POSITION PLATE (jouer avec top et left .plate)-----------------------------*/
+
+.layer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+}
+
+.menu {
+    width: 30%;
+    margin: auto;
+    padding: 3rem;
+    border: 1px solid;
+    position: relative;
+    z-index: 1;
+}
+
+.plate {
+    position: absolute;
+    top: 15%;
+    left: 47%;
+    transform: translateX(-50%);
+    z-index: 0;
 }

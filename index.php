@@ -26,7 +26,7 @@
       <h2>Menu</h2>
       <div class="experience">
         <h3>Amuse-bouches</h3>
-        <p>Expériences</p>
+        <a href="experience.html">Expériences</a> 
       </div>
       <div class="formation">
         <h3>Entrée</h3>

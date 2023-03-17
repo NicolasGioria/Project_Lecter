@@ -1,0 +1,61 @@
+:root {
+    --primary-color: #A6A6A6;
+    --secondary-color: #595959;
+    --light-color: #D9D9D9;
+    --dark-color: #121212;
+
+
+    --font-mainTitle: "Italianno", cursive;
+    --font-title: "Cormorant", serif;
+    --font-text: "Libre Franklin", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    width: 40vw;
+    height: 80vh;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    padding: 30px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,.2);
+    border-radius: 10px;
+
+}
+
+main {
+    height: auto;
+}
+
+h1 {
+    font-family: var(--font-title);
+    font-size: 60px;
+    text-align: center;
+}
+
+img {
+    width: 4Opx;
+    height: 40px;
+
+  margin-left: 15rem;
+  margin-right: 15rem;
+
+}
+
+ul, li {
+    font-family: var(--font-text);
+    font-size: 20px;
+    list-style-type: none;
+
+}
+
+li {
+    margin: 3rem;
+    
+}
+ul {
+    padding: 0;
+}
