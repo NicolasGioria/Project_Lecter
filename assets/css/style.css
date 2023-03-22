@@ -16,24 +16,34 @@
 
 }
 
+html, body{
+    overflow: hidden;
+}
+
 .container {
     display: flex;
     flex-direction: row;
     width: 90vw;
     height: 90vh;
     margin: auto;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 
-    box-shadow: 0 0 4px;
+    
+    background-color: white;
+    border-radius: 6px;
 
+    -webkit-box-shadow: -12px 21px 15px 3px #868686; 
+    box-shadow: -12px 21px 15px 3px #868686;
 }
+
 
 button {
     padding: 0.5rem;
 
 }
-.contact-button:hover{
+
+.contact-button:hover {
     background-color: darkred;
     color: var(--light-color);
 }
@@ -57,9 +67,10 @@ button {
 
     position: relative;
 }
-.picture:hover{
+
+.picture:hover {
     background-image: url(/assets/images/Sans-titre-1.jpg);
-   
+
 }
 
 
@@ -94,14 +105,11 @@ button {
 
 .menu {
 
-    width: 30%;
+  
     margin: auto;
     background-color: #fbfbfb;
     padding: 3rem;
     border: 1px solid;
-
-
-   
 }
 
 .menu p {
@@ -217,8 +225,7 @@ a {
 }
 
 .menu {
-    width: 30%;
-    margin: auto;
+  width: 50%;
     padding: 3rem;
     border: 1px solid;
     position: relative;

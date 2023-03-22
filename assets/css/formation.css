@@ -10,7 +10,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
+
+.formationBody {
     font-family: var(--font-text);
     background: #ffffff;
     color: rgb(255, 255, 255);
