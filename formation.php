@@ -13,6 +13,7 @@
     </head>
 
     <body>
+        <div class="formationBody">
         <section class="timeline">
             <h1>Formation</h1>
             <ul>
@@ -49,6 +50,7 @@
                 </li>
             </ul>
         </section>
+</div>
     </body>
     <script src="assets/js/formation.js"></script>
 </html>
