@@ -9,6 +9,11 @@
     --font-title: "Cormorant", serif;
     --font-text: "Libre Franklin", sans-serif;
 
+    --spacing: 0.5rem;
+    --spacing1: 1rem;
+    --spacing2: 2rem;
+    --spacing3: 4rem;
+
 }
 
 .container {
@@ -28,18 +33,22 @@ button {
     padding: 0.5rem;
 
 }
+.contact-button:hover{
+    background-color: darkred;
+    color: var(--light-color);
+}
 
 .picture h1 {
     color: white;
     margin-left: 0.4rem;
     margin-top: 0.1rem;
-    font-size: 45px;
+    font-size: 60px;
     font-family: var(--font-mainTitle);
 
 }
 
 .picture {
-    background-image: url("../photo/hannibal.jpg");
+    background-image: url(/assets/photo/hannibal.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -48,6 +57,11 @@ button {
 
     position: relative;
 }
+.picture:hover{
+    background-image: url(/assets/images/Sans-titre-1.jpg);
+   
+}
+
 
 .contact-button {
     position: absolute;
@@ -75,8 +89,8 @@ button {
 
     height: 60px;
     margin-bottom: 1rem;
-    ;
 }
+
 
 .menu {
 
@@ -85,6 +99,9 @@ button {
     background-color: #fbfbfb;
     padding: 3rem;
     border: 1px solid;
+
+
+   
 }
 
 .menu p {
@@ -92,7 +109,7 @@ button {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 60px;
     text-align: right;
     margin: 10px;
     font-family: var(--font-mainTitle);
@@ -100,18 +117,19 @@ h2 {
 }
 
 h3 {
-    text-decoration: underline;
+
     margin: 0;
     font-family: var(--font-text)
 }
 
 .layer h1 {
     text-align: right;
-    margin-right: 2rem;
-    font-size: 40px;
+    margin-right: 1rem;
+    font-size: 60px;
     font-family: var(--font-mainTitle);
     text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
-
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .social-media {
@@ -193,6 +211,9 @@ a {
     flex-direction: column;
     width: 50%;
     position: relative;
+    background-image: url(/assets/images/pngegg\ \(7\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .menu {
@@ -210,4 +231,131 @@ a {
     left: 47%;
     transform: translateX(-50%);
     z-index: 0;
+}
+
+/*modal*/
+
+dialog {
+    min-height: 60vh;
+    max-height: 80vh;
+    box-shadow: 0 0 100vmax 100vmax rgba(0, 0, 0, 0.8);
+    overflow: auto;
+}
+
+
+dialog .close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    text-decoration: none;
+}
+
+/*modal formation*/
+#more_formation:target {
+    position: fixed;
+    top: 100px;
+    margin: auto;
+    display: block;
+    width: 50%;
+}
+
+#formation>h1 {
+    margin: 0;
+    font-family: var(--font-title);
+    font-size: 20px;
+    text-align: center;
+}
+
+#formation>a {
+    color: #000;
+    font-family: var(--font-text);
+    font-size: 20px;
+}
+
+/*modal experiences*/
+#more_experiences:target {
+    position: fixed;
+    top: 100px;
+    margin: auto;
+    display: block;
+    width: 50%;
+}
+
+#experiences>h1 {
+    margin: 0;
+    font-family: var(--font-title);
+    font-size: 20px;
+    text-align: center;
+}
+
+#experiences>a {
+    color: #000;
+    font-family: var(--font-text);
+    font-size: 20px;
+}
+
+/*modal interets*/
+#more_interets:target {
+    position: fixed;
+    top: 100px;
+    margin: auto;
+    display: block;
+    width: 50%;
+}
+
+#interets>h1 {
+    margin: 0;
+    font-family: var(--font-title);
+    font-size: 20px;
+    text-align: center;
+}
+
+#interets>a {
+    color: #000;
+    font-family: var(--font-text);
+    font-size: 20px;
+}
+
+/*modal talents*/
+#more_talents:target {
+    position: fixed;
+    top: 100px;
+    margin: auto;
+    display: block;
+    width: 50%;
+}
+
+#talents>h1 {
+    margin: 0;
+    font-family: var(--font-title);
+    font-size: 20px;
+    text-align: center;
+}
+
+#talents>a {
+    color: #000;
+    font-family: var(--font-text);
+    font-size: 20px;
+}
+
+/*modal coordonnees*/
+#more_coordonnees:target {
+    position: fixed;
+    top: 100px;
+    margin: auto;
+    display: block;
+    width: 50%;
+}
+
+#coordonnees>h1 {
+    margin: 0;
+    font-family: var(--font-title);
+    font-size: 20px;
+    text-align: center;
+}
+
+#coordonnees>a {
+    color: #000;
+    font-family: var(--font-text);
+    font-size: 20px;
 }
