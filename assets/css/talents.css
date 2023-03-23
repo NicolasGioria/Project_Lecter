@@ -16,7 +16,6 @@
 
 body {
     background: #E9E5E2;
-    margin: 2%;
 }
 
 .talentsBody>h1 {
@@ -39,7 +38,7 @@ body {
 #SkillBox {
     font-size: 60px;
     font-family: var(--font-mainTitle);
-    font-style: --red-blood: hsl(0, 100%, 41.2%);
+    font-style: --red-blood hsl(0, 100%, 41.2%);
     text-align: left;
     width: 65%;
     height: auto;

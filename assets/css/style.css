@@ -43,21 +43,13 @@ body {
     box-shadow: -12px 21px 15px 3px #868686;
 }
 
-button {
-    padding: 0.5rem;
-}
-
-.contact-button:hover {
-    background-color: darkred;
-    color: var(--light-color);
-}
 
 .picture h1 {
     color: white;
     margin-left: 0.4rem;
     margin-top: 0.1rem;
-    font-size: 60px;
-    font-family: var(--font-mainTitle);
+    font-size: 50px;
+    font-family: var(--font-title);
 }
 
 .picture {
@@ -112,10 +104,16 @@ button {
 
 #menu > li {
     text-align: center;
-    box-shadow: 0 0 4px;
 
     height: 60px;
-    margin-bottom: 1rem;
+}
+
+.menuSeparator>img{
+    display: block;
+    margin: auto;
+    width: 100px;
+
+
 }
 
 .menu {
@@ -124,8 +122,8 @@ button {
     margin: auto;
     background-color: #fbfbfb;
     padding: 3rem;
-    border: 1px solid;
-    margin-bottom: 1rem;
+    background-image: url(/assets/images/11.jpg);
+    /*transform: rotate(3deg);*/
 }
 
 .menu p {
@@ -149,8 +147,8 @@ h3 {
 .layer h1 {
     text-align: right;
     margin-right: 1rem;
-    font-size: 60px;
-    font-family: var(--font-mainTitle);
+    font-size: 50px;
+    font-family: var(--font-title);
     margin-bottom: 0;
     margin-top: 0;
 }
@@ -241,9 +239,9 @@ a {
     padding: 3rem;
     padding-top: 1rem;
     padding-bottom: 0;
-    border: 1px solid;
     position: relative;
     z-index: 1;
+    box-shadow: 15px 8px 15px -1px rgba(71, 71, 71, 0.49);
 }
 
 .logo>img {
@@ -260,6 +258,7 @@ a {
     transform: translateX(-50%);
     z-index: 0;
 }
+
 
 /*modal*/
 
@@ -284,17 +283,18 @@ dialog .close {
     top: 100px;
     margin: auto;
     display: block;
-    width: 60%;
+    width: 80%;
     height: 80%;
     background-image: url(/assets/images/tache2_sang_experience.png);
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 #formation > h1 {
     margin: 0;
     font-family: var(--font-title);
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
 }
 
@@ -316,14 +316,15 @@ dialog .close {
 #experiences > h1 {
     margin: 0;
     font-family: var(--font-title);
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
 }
 
 #experiences > a {
     color: #000;
     font-family: var(--font-text);
-    font-size: 20px;
+    font-size: 20px;    
+
 }
 
 /*modal interets*/
@@ -343,7 +344,7 @@ dialog .close {
 #interets > h1 {
     margin: 0;
     font-family: var(--font-title);
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
 }
 
@@ -361,7 +362,7 @@ dialog .close {
     display: block;
     width: 50%;
     height: 80%;
-    background-image: url(/assets/images/pngegg\ \(7\).png);
+    background-image: url(/assets/images/bloodmenu.png);
     background-position: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -370,7 +371,7 @@ dialog .close {
 #talents > h1 {
     margin: 0;
     font-family: var(--font-title);
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
 }
 
@@ -392,7 +393,7 @@ dialog .close {
 #coordonnees > h1 {
     margin: 0;
     font-family: var(--font-title);
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
 }
 
@@ -422,14 +423,15 @@ dialog .close {
 
 #contact>a {
     
-    font-family: var(--font-text);
-    font-size: 20px;
+    font-family: var(--font-title);
+    font-size: 18px;
     position: absolute;
     bottom: 1rem;
     right: 1rem;
     border: 1px solid white;
     background-color: var(--light-color);
     color: var(--dark-color);
-
+    padding: 0.5rem;
     
 }
+
