@@ -1,9 +1,12 @@
 :root {
-    --primary-color: #A6A6A6;
+    --primary-color: #a6a6a6;
     --secondary-color: #595959;
-    --light-color: #D9D9D9;
+    --light-color: #d9d9d9;
     --dark-color: #121212;
+    --background-black: #000000c9;
+    --red-blood: hsl(0, 100%, 41.2%);
 
+    --border-shadow: 15px 8px 15px -1px rgba(0, 0, 0, 0.49);
 
     --font-mainTitle: "Italianno", cursive;
     --font-title: "Cormorant", serif;
@@ -13,10 +16,10 @@
     --spacing1: 1rem;
     --spacing2: 2rem;
     --spacing3: 4rem;
-
 }
 
-html, body{
+html,
+body {
     overflow: hidden;
 }
 
@@ -29,18 +32,15 @@ html, body{
     margin-top: 3rem;
     margin-bottom: 3rem;
 
-    
     background-color: white;
     border-radius: 6px;
 
-    -webkit-box-shadow: -12px 21px 15px 3px #868686; 
+    -webkit-box-shadow: -12px 21px 15px 3px #868686;
     box-shadow: -12px 21px 15px 3px #868686;
 }
 
-
 button {
     padding: 0.5rem;
-
 }
 
 .contact-button:hover {
@@ -54,7 +54,6 @@ button {
     margin-top: 0.1rem;
     font-size: 60px;
     font-family: var(--font-mainTitle);
-
 }
 
 .picture {
@@ -70,9 +69,7 @@ button {
 
 .picture:hover {
     background-image: url(/assets/images/Sans-titre-1.jpg);
-
 }
-
 
 .contact-button {
     position: absolute;
@@ -87,14 +84,12 @@ button {
 }
 
 #menu {
-
-
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-#menu li {
+#menu > li {
     text-align: center;
     box-shadow: 0 0 4px;
 
@@ -102,10 +97,7 @@ button {
     margin-bottom: 1rem;
 }
 
-
 .menu {
-
-  
     margin: auto;
     background-color: #fbfbfb;
     padding: 3rem;
@@ -125,9 +117,8 @@ h2 {
 }
 
 h3 {
-
     margin: 0;
-    font-family: var(--font-text)
+    font-family: var(--font-text);
 }
 
 .layer h1 {
@@ -135,7 +126,11 @@ h3 {
     margin-right: 1rem;
     font-size: 60px;
     font-family: var(--font-mainTitle);
-    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+    text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc,
+        1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee,
+        4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc,
+        4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee,
+        7px 6px 1px #cccccc;
     margin-bottom: 0;
     margin-top: 0;
 }
@@ -149,7 +144,6 @@ a {
     font-family: var(--font-title);
     font-size: 20px;
     text-decoration: none;
-
 }
 
 /*---------------------------------------------ASSIETTE---------------------------------*/
@@ -219,13 +213,13 @@ a {
     flex-direction: column;
     width: 50%;
     position: relative;
-    background-image: url(/assets/images/pngegg\ \(7\).png);
+    background-image: url(/assets/images/pngegg\\(7\).png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .menu {
-  width: 50%;
+    width: 50%;
     padding: 3rem;
     border: 1px solid;
     position: relative;
@@ -249,7 +243,6 @@ dialog {
     overflow: auto;
 }
 
-
 dialog .close {
     position: absolute;
     top: 2rem;
@@ -263,17 +256,21 @@ dialog .close {
     top: 100px;
     margin: auto;
     display: block;
-    width: 50%;
+    width: 60%;
+    height: 80%;
+    background-image: url(/assets/images/tache2_sang_experience.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#formation>h1 {
+#formation > h1 {
     margin: 0;
     font-family: var(--font-title);
     font-size: 20px;
     text-align: center;
 }
 
-#formation>a {
+#formation > a {
     color: #000;
     font-family: var(--font-text);
     font-size: 20px;
@@ -288,14 +285,14 @@ dialog .close {
     width: 50%;
 }
 
-#experiences>h1 {
+#experiences > h1 {
     margin: 0;
     font-family: var(--font-title);
     font-size: 20px;
     text-align: center;
 }
 
-#experiences>a {
+#experiences > a {
     color: #000;
     font-family: var(--font-text);
     font-size: 20px;
@@ -310,14 +307,14 @@ dialog .close {
     width: 50%;
 }
 
-#interets>h1 {
+#interets > h1 {
     margin: 0;
     font-family: var(--font-title);
     font-size: 20px;
     text-align: center;
 }
 
-#interets>a {
+#interets > a {
     color: #000;
     font-family: var(--font-text);
     font-size: 20px;
@@ -332,14 +329,14 @@ dialog .close {
     width: 50%;
 }
 
-#talents>h1 {
+#talents > h1 {
     margin: 0;
     font-family: var(--font-title);
     font-size: 20px;
     text-align: center;
 }
 
-#talents>a {
+#talents > a {
     color: #000;
     font-family: var(--font-text);
     font-size: 20px;
@@ -354,14 +351,14 @@ dialog .close {
     width: 50%;
 }
 
-#coordonnees>h1 {
+#coordonnees > h1 {
     margin: 0;
     font-family: var(--font-title);
     font-size: 20px;
     text-align: center;
 }
 
-#coordonnees>a {
+#coordonnees > a {
     color: #000;
     font-family: var(--font-text);
     font-size: 20px;
