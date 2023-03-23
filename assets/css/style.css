@@ -16,7 +16,8 @@
 
 }
 
-html, body{
+html,
+body {
     overflow: hidden;
 }
 
@@ -29,11 +30,11 @@ html, body{
     margin-top: 3rem;
     margin-bottom: 3rem;
 
-    
+
     background-color: white;
     border-radius: 6px;
 
-    -webkit-box-shadow: -12px 21px 15px 3px #868686; 
+    -webkit-box-shadow: -12px 21px 15px 3px #868686;
     box-shadow: -12px 21px 15px 3px #868686;
 }
 
@@ -105,7 +106,7 @@ button {
 
 .menu {
 
-  
+
     margin: auto;
     background-color: #fbfbfb;
     padding: 3rem;
@@ -225,7 +226,7 @@ a {
 }
 
 .menu {
-  width: 50%;
+    width: 50%;
     padding: 3rem;
     border: 1px solid;
     position: relative;
@@ -330,6 +331,11 @@ dialog .close {
     margin: auto;
     display: block;
     width: 50%;
+    height: 80%;
+    background-image: url(/assets/images/pngegg\ \(7\).png);
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #talents>h1 {
