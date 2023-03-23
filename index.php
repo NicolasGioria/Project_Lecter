@@ -1,6 +1,9 @@
 <?php
 require 'formationData.php';
 ?>
+<?php
+require 'experienceData.php';
+?>
 
 
 <!DOCTYPE html>
@@ -13,6 +16,7 @@ require 'formationData.php';
   <title>Hannibal Lecter se présente...</title>
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="assets/css/formation.css" />
+  <link rel="stylesheet" href="assets/css/experience.css" />
   <link rel="stylesheet" href="assets/css/interets.css">
   <link rel="stylesheet" href="/assets/css/talents.css">
   <link rel="stylesheet" href="./assets/css/coordonnee.css">
@@ -76,21 +80,25 @@ require 'formationData.php';
 
             <div class="menuSeparator"><img src="/assets/images/tilde2.png" alt="Séparation" /></div>
 
-            <section id="experiences">
+            <section id="experience">
               <h1>Entrée</h1>
-
-              <a href="#more_experiences">Expériences</a>
-              <dialog id="more_experiences">
+              <a href="#more_experience">Expériences</a>
+              <dialog id="more_experience">
                 <a class="close" href="#close">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                     <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
                   </svg>
                 </a>
-                <h1>Entrée</h1>
-                <h2>Expériences</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla facilis placeat nemo provident dolore
-                  repellat obcaecati harum enim deleniti distinctio ipsam modi tempora minus suscipit natus
-                  necessitatibus, fugiat quasi sit!</p>
+                <div class="experienceBody">
+                  <section class="timeline">
+                    <h1 class="experience">Experience</h1>
+                    <ul>
+                      <?php foreach ($experienceData as $experience) { ?>
+                        <?php include '_experience.php'; ?>
+                      <?php } ?>
+                    </ul>
+                  </section>
+                </div>
               </dialog>
             </section>
           </li>

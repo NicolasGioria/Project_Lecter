@@ -291,22 +291,26 @@ dialog .close {
 }
 
 /*modal experiences*/
-#more_experiences:target {
+#more_experience:target {
     position: fixed;
     top: 100px;
     margin: auto;
     display: block;
-    width: 50%;
+    width: 80%;
+    height: 80%;
+    background-image: url(/assets/images/tache_sang_formation.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#experiences > h1 {
+#experience > h1 {
     margin: 0;
     font-family: var(--font-title);
     font-size: 24px;
     text-align: center;
 }
 
-#experiences > a {
+#experience > a {
     color: #000;
     font-family: var(--font-text);
     font-size: 20px;
