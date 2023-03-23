@@ -327,6 +327,11 @@ dialog .close {
     margin: auto;
     display: block;
     width: 50%;
+    height: 80%;
+    background-image: url(/assets/images/pngegg\ \(7\).png);
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #talents > h1 {
