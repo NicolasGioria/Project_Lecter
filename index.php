@@ -42,7 +42,6 @@ require 'formationData.php';
           </a>
         </dialog>
       </section>
-
     </div>
     <div class="layer">
       <h1>Critique Culinaire</h1>
@@ -74,6 +73,9 @@ require 'formationData.php';
             </section>
           </li>
           <li>
+
+            <div class="menuSeparator"><img src="/assets/images/tilde2.png" alt="Séparation" /></div>
+
             <section id="experiences">
               <h1>Entrée</h1>
 
@@ -93,6 +95,9 @@ require 'formationData.php';
             </section>
           </li>
           <li>
+
+            <div class="menuSeparator"><img src="/assets/images/tilde2.png" alt="Séparation" /></div>
+
             <section id="interets">
               <h1>Plat principal</h1>
 
@@ -108,6 +113,9 @@ require 'formationData.php';
             </section>
           </li>
           <li>
+
+            <div class="menuSeparator"><img src="/assets/images/tilde2.png" alt="Séparation" /></div>
+
             <section id="talents">
               <h1>Fromage</h1>
 
@@ -123,6 +131,9 @@ require 'formationData.php';
             </section>
           </li>
           <li>
+
+            <div class="menuSeparator"><img src="/assets/images/tilde2.png" alt="Séparation" /></div>
+
             <section id="coordonnees">
               <h1>Dessert</h1>
 
