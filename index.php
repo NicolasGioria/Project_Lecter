@@ -1,3 +1,8 @@
+<?php
+require 'formationData.php';
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,7 +35,6 @@
           <li>
             <section id="formation">
               <h1>Amuse-bouches</h1>
-
               <a href="#more_formation">Formation</a>
               <dialog id="more_formation">
                 <a class="close" href="#close">
@@ -38,7 +42,16 @@
                     <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
                   </svg>
                 </a>
-                <?php include('_formation.php'); ?>
+                <div class="formationBody">
+                  <section class="timeline">
+                    <h1 class="formation">Formation</h1>
+                    <ul>
+                      <?php foreach ($formationData as $formation) { ?>
+                        <?php include '_formation.php'; ?>
+                      <?php } ?>
+                    </ul>
+                  </section>
+                </div>
               </dialog>
             </section>
           </li>

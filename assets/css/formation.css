@@ -13,7 +13,7 @@
 
 .formationBody {
     font-family: var(--font-text);
-    background: #ffffff;
+    /*background: #ffffff;*/
     color: rgb(255, 255, 255);
     /*overflow-x: hidden;*/
     padding: 3rem;
@@ -28,17 +28,16 @@ h1.formation {
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .timeline ul {
-    background: #ffffff;
+    /*background: #ffffff;*/
     margin: 0, auto;
 }
-
 .timeline ul li {
     list-style-type: none;
     position: relative;
     width: 6px;
     margin: 0 auto;
     padding-top: 50px;
-    background: rgb(137, 67, 67);
+    background: #000000c9;
 }
 .timeline ul li::after {
     content: "";
@@ -57,21 +56,21 @@ h1.formation {
     bottom: 0;
     width: 400px;
     padding: 15px;
-    background: var(--secondary-color);
+    background: #000000c9;
     border-radius: 10px;
-    box-shadow: 7px 8px 15px -1px rgba(0, 0, 0, 0.49);
+    box-shadow: 15px 8px 15px -1px rgba(0, 0, 0, 0.49);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-.timeline ul li div .image {
+.timeline ul li div .logoLecter {
     position: relative;
     width: 100%;
     text-align: center;
     margin-top: 5px;
 }
-.timeline ul li div .image img {
+.timeline ul li div .logoLecter img {
     max-width: 15%;
     height: auto;
 }
@@ -90,7 +89,7 @@ h1.formation {
 .timeline ul li:nth-child(odd) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent rgb(137, 67, 67) transparent transparent;
+    border-color: transparent hsl(0, 100%, 41.2%) transparent transparent;
 }
 .timeline ul li:nth-child(even) div {
     left: -439px;
@@ -98,11 +97,11 @@ h1.formation {
 .timeline ul li:nth-child(even) div::before {
     right: -15px;
     border-width: 8px 0 8px 16px;
-    border-color: transparent transparent transparent rgb(137, 67, 67);
+    border-color: transparent transparent transparent hsl(0, 100%, 41.2%);
 }
 time {
     display: block;
-    color: hsl(0, 60%, 44%);
+    color: hsl(0, 100%, 41.2%);
     font-size: 1.5rem;
     font-weight: bolder;
     margin-bottom: 8px;
