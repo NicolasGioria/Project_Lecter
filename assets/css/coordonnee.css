@@ -1,0 +1,68 @@
+:root {
+    --primary-color: #a6a6a6;
+    --secondary-color: #595959;
+    --light-color: #d9d9d9;
+    --dark-color: #121212;
+
+    --font-mainTitle: "Italianno", cursive;
+    --font-title: "Cormorant", serif;
+    --font-text: "Libre Franklin", sans-serif;
+
+    --background-black: #000000c9;
+    --red-blood: hsl(0, 100%, 41.2%);
+    --border-shadow: 15px 8px 15px -1px rgba(0, 0, 0, 0.49);
+}
+
+.coordonneeTitle > h1 {
+    font-family: var(--font-title);
+    text-align: left;
+    font-size: 60px;
+    padding-left: 15%;
+    padding-top: 3%;
+}
+.coordonnee {
+    margin: 0rem 8rem;
+    padding: 3rem 2rem 1rem 2rem;
+    background-color: #fff;
+    font-family: var(--font-text);
+    border-radius: 10px;
+    box-shadow: var(--border-shadow);
+}
+.coordonneeBody {
+    display: flex;
+    gap: 70px;
+}
+
+.coordonneeLeft {
+    margin: auto;
+    text-align: center;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 40%;
+}
+.telephone a {
+    color: black;
+}
+.coordonneeRight {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    width: 40%;
+}
+
+.reseaux ul {
+    display: flex;
+    justify-content: space-around;
+}
+.reseaux li {
+    list-style: none;
+}
+
+.reseaux i {
+    color: var(--red-blood);
+}
+.butterfly {
+    padding-top: 1rem;
+}

@@ -24,7 +24,7 @@ body {
 }
 
 body {
-   background-color: #E9E5E2;
+    background-color: #e9e5e2;
 }
 
 .container {
@@ -88,14 +88,11 @@ button {
 }
 
 #ring:checked ~ .picture {
-    --image: url('/assets/images/darkhannibal.jpg');
-  
-
+    --image: url("/assets/images/darkhannibal.jpg");
 }
 
 #ring:checked ~ .layer {
-    --image: url('/assets/images/bloodmenu.png');
-
+    --image: url("/assets/images/bloodmenu.png");
 }
 
 .layer {
@@ -119,19 +116,15 @@ button {
 }
 
 .menu {
-
-
     margin: auto;
     background-color: #fbfbfb;
     padding: 3rem;
     border: 1px solid;
-    margin-bottom: 1rem;
 }
 
 .menu p {
     margin: 0;
 }
-
 
 h2 {
     font-size: 60px;
@@ -155,14 +148,11 @@ h3 {
     margin-top: 0;
 }
 
-
-
 a {
     font-family: var(--font-title);
     font-size: 20px;
     text-decoration: none;
 }
-
 
 /*---------------------------------------------ASSIETTE---------------------------------*/
 .plate {
@@ -246,7 +236,7 @@ a {
     z-index: 1;
 }
 
-.logo>img {
+.logo > img {
     display: block;
     margin: auto;
     width: 80px;
@@ -284,7 +274,7 @@ dialog .close {
     top: 100px;
     margin: auto;
     display: block;
-    width: 60%;
+    width: 70%;
     height: 80%;
     background-image: url(/assets/images/tache2_sang_experience.png);
     background-repeat: no-repeat;
@@ -337,7 +327,6 @@ dialog .close {
     background-image: url(/assets/images/sang2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 #interets > h1 {
@@ -361,7 +350,7 @@ dialog .close {
     display: block;
     width: 50%;
     height: 80%;
-    background-image: url(/assets/images/pngegg\ \(7\).png);
+    background-image: url(/assets/images/bloodmenu.png);
     background-position: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -386,7 +375,11 @@ dialog .close {
     top: 100px;
     margin: auto;
     display: block;
-    width: 50%;
+    width: 60%;
+    height: 100%;
+    background-image: url(/assets/images/sang2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #coordonnees > h1 {
@@ -409,19 +402,17 @@ dialog .close {
     margin: auto;
     display: block;
     width: 50%;
-    z-index:2;
-    
+    z-index: 2;
 }
 
-#contact>h1 {
+#contact > h1 {
     margin: 0;
     font-family: var(--font-title);
     font-size: 20px;
     text-align: center;
 }
 
-#contact>a {
-    
+#contact > a {
     font-family: var(--font-text);
     font-size: 20px;
     position: absolute;
@@ -430,6 +421,4 @@ dialog .close {
     border: 1px solid white;
     background-color: var(--light-color);
     color: var(--dark-color);
-
-    
 }
