@@ -16,8 +16,13 @@
 
 }
 
-html, body{
+html,
+body {
     overflow: hidden;
+}
+
+body {
+   background-color: #E9E5E2;
 }
 
 .container {
@@ -29,11 +34,11 @@ html, body{
     margin-top: 3rem;
     margin-bottom: 3rem;
 
-    
+
     background-color: white;
     border-radius: 6px;
 
-    -webkit-box-shadow: -12px 21px 15px 3px #868686; 
+    -webkit-box-shadow: -12px 21px 15px 3px #868686;
     box-shadow: -12px 21px 15px 3px #868686;
 }
 
@@ -58,7 +63,8 @@ button {
 }
 
 .picture {
-    background-image: url(/assets/photo/hannibal.jpg);
+    --image: url(/assets/photo/hannibal.jpg);
+    background-image: var(--image);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -68,16 +74,30 @@ button {
     position: relative;
 }
 
-.picture:hover {
-    background-image: url(/assets/images/Sans-titre-1.jpg);
+#ring {
+    position: absolute;
+    width: 40px;
+    bottom: 1rem;
+    left: 1rem;
+    appearance: none;
+}
+#ring:active {
+    position: absolute;
+    width: 30px;
+    bottom: 1rem;
+    left: 1rem;
+    appearance: none;
+}
+
+#ring:checked ~ .picture {
+    --image: url('/assets/images/darkhannibal.jpg');
+  
 
 }
 
+#ring:checked ~ .layer {
+    --image: url('/assets/images/bloodmenu.png');
 
-.contact-button {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
 }
 
 .layer {
@@ -105,16 +125,18 @@ button {
 
 .menu {
 
-  
+
     margin: auto;
     background-color: #fbfbfb;
     padding: 3rem;
     border: 1px solid;
+    margin-bottom: 1rem;
 }
 
 .menu p {
     margin: 0;
 }
+
 
 h2 {
     font-size: 60px;
@@ -135,15 +157,11 @@ h3 {
     margin-right: 1rem;
     font-size: 60px;
     font-family: var(--font-mainTitle);
-    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
     margin-bottom: 0;
     margin-top: 0;
 }
 
-.social-media {
-    flex-direction: row;
-    align-items: right;
-}
+
 
 a {
     font-family: var(--font-title);
@@ -151,6 +169,7 @@ a {
     text-decoration: none;
 
 }
+
 
 /*---------------------------------------------ASSIETTE---------------------------------*/
 .plate {
@@ -219,17 +238,26 @@ a {
     flex-direction: column;
     width: 50%;
     position: relative;
-    background-image: url(/assets/images/pngegg\ \(7\).png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: var(--image, none);
 }
 
 .menu {
-  width: 50%;
+    width: 50%;
     padding: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 0;
     border: 1px solid;
     position: relative;
     z-index: 1;
+}
+
+.logo>img {
+    display: block;
+    margin: auto;
+    width: 80px;
+    margin-bottom: 1rem;
 }
 
 .plate {
@@ -247,6 +275,7 @@ dialog {
     max-height: 80vh;
     box-shadow: 0 0 100vmax 100vmax rgba(0, 0, 0, 0.8);
     overflow: auto;
+    border-radius: 10px;
 }
 
 
@@ -307,7 +336,12 @@ dialog .close {
     top: 100px;
     margin: auto;
     display: block;
-    width: 50%;
+    width: 60%;
+    height: 80%;
+    background-image: url(/assets/images/sang2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 #interets>h1 {
@@ -365,4 +399,36 @@ dialog .close {
     color: #000;
     font-family: var(--font-text);
     font-size: 20px;
+}
+
+/*modal contact*/
+#more_contact:target {
+    position: fixed;
+    top: 100px;
+    margin: auto;
+    display: block;
+    width: 50%;
+    z-index:2;
+    
+}
+
+#contact>h1 {
+    margin: 0;
+    font-family: var(--font-title);
+    font-size: 20px;
+    text-align: center;
+}
+
+#contact>a {
+    
+    font-family: var(--font-text);
+    font-size: 20px;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    border: 1px solid white;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+
+    
 }
