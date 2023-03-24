@@ -1,43 +1,35 @@
 :root {
-    --primary-color: #A6A6A6;
+    --primary-color: #a6a6a6;
     --secondary-color: #595959;
-    --light-color: #D9D9D9;
+    --light-color: #d9d9d9;
     --dark-color: #121212;
     --background-black: #000000c9;
     --red-blood: hsl(0, 100%, 50%);
     --border-shadow: 15px 8px 15px -1px rgba(0, 0, 0, 49);
-
-    --font-text: 'Times New Roman', Times, serif;
+    --font-text: "Times New Roman", Times, serif;
     --font-mainTitle: "Italianno", cursive;
     --font-title: "Cormorant", serif;
     --font-text: "Libre Franklin", sans-serif;
-
 }
-
 body {
-    background: #E9E5E2;
+    background: #e9e5e2;
 }
-
-.talentsBody>h1 {
+.talentsBody > h1 {
     font-family: var(--font-title);
     font-size: 60px;
     text-align: left;
     margin: 1rem;
-
 }
-
 .textAccueil h1 {
     font-family: var(--font-title);
     font-size: 60px;
     text-align: left;
     margin: 2rem;
-
+    text-shadow: 2px 2px 4px var(--light-color);
 }
-
-
 #SkillBox {
     font-size: 60px;
-    font-family: var(--font-mainTitle);
+    font-family: var(--font-title);
     font-style: --red-blood hsl(0, 100%, 41.2%);
     text-align: left;
     width: 65%;
@@ -45,36 +37,27 @@ body {
     margin: 6rem;
     background-color: #000000c9;
     border: 5px solid transparent;
-    border-radius: 19px 19px 19px 19px;
-    -webkit-box-shadow: 13px 11px 12px 13px rgba(156, 156, 156, 0.88);
-    box-shadow: 13px 11px 12px 13px rgba(156, 156, 156, 0.88);
-
+    border-radius: 10px;
+    box-shadow: var(--border-shadow);
 }
-
 .butterflyTalent {
-
     display: block;
     margin: 30px, auto;
-
 }
-
 #SkillBox img {
-    width: 70px;
+    width: 100px;
     height: 10%;
-    margin: auto 43%;
+    margin-left: 40%;
     padding: 10px;
 }
-
 .SkillBar {
     width: 90%;
     height: 50px;
     position: relative;
-    background: rgba(17, 17, 17, .3);
+    background: rgba(17, 17, 17, 0.3);
     margin: 20px auto;
     border-radius: 10px 10px;
-
 }
-
 #Skill-HTML {
     width: 100%;
     animation: Animate-HTML 4s;
@@ -83,51 +66,41 @@ body {
     -o-animation: Animate-HTML 4s;
     height: 50px;
     position: absolute;
-    background-color: #CCCCCC;
+    background-color: #cccccc;
     border-radius: 10px 10px;
-
 }
-
 @keyframes Animate-HTML {
     from {
         width: 10px;
     }
-
     to {
-        width: 100%
+        width: 100%;
     }
 }
-
 @-webkit-keyframes Animate-HTML {
     from {
         width: 10px;
     }
-
     to {
-        width: 100%
+        width: 100%;
     }
 }
-
 @-moz-keyframes Animate-HTML {
     from {
         width: 10px;
     }
-
     to {
-        width: 100%
+        width: 100%;
     }
 }
-
 @-o-keyframes Animate-HTML {
     from {
         width: 10px;
     }
-
     to {
-        width: 100%
+        width: 100%;
     }
 }
-
 #Skill-CSS {
     animation: Animate-CSS 5s;
     -webkit-animation: Animate-CSS 5s;
@@ -138,49 +111,39 @@ body {
     position: absolute;
     background-color: #999999;
     border-radius: 10px 10px;
-
 }
-
 @keyframes Animate-CSS {
     from {
         width: 10px;
     }
-
     to {
-        width: 70%
+        width: 70%;
     }
 }
-
 @-webkit-keyframes Animate-CSS {
     from {
         width: 10px;
     }
-
     to {
-        width: 70%
+        width: 70%;
     }
 }
-
 @-moz-keyframes Animate-CSS {
     from {
         width: 10px;
     }
-
     to {
-        width: 70%
+        width: 70%;
     }
 }
-
 @-o-keyframes Animate-CSS {
     from {
         width: 10px;
     }
-
     to {
-        width: 70%
+        width: 70%;
     }
 }
-
 #Skill-jQuery {
     animation: Animate-jQuery 5s;
     -webkit-animation: Animate-jQuery 5s;
@@ -191,49 +154,39 @@ body {
     position: absolute;
     background-color: #666666;
     border-radius: 10px 10px;
-
 }
-
 @keyframes Animate-jQuery {
     from {
         width: 10px;
     }
-
     to {
-        width: 90%
+        width: 90%;
     }
 }
-
 @-webkit-keyframes Animate-jQuery {
     from {
         width: 10px;
     }
-
     to {
-        width: 90%
+        width: 90%;
     }
 }
-
 @-moz-keyframes Animate-jQuery {
     from {
         width: 10px;
     }
-
     to {
-        width: 90%
+        width: 90%;
     }
 }
-
 @-o-keyframes Animate-jQuery {
     from {
         width: 10px;
     }
-
     to {
-        width: 90%
+        width: 90%;
     }
 }
-
 #Skill-JS {
     animation: Animate-JS 4s;
     -webkit-animation: Animate-JS 4s;
@@ -244,49 +197,39 @@ body {
     position: absolute;
     background-color: #474545e7;
     border-radius: 10px 10px;
-
 }
-
 @keyframes Animate-JS {
     from {
         width: 10px;
     }
-
     to {
-        width: 85%
+        width: 85%;
     }
 }
-
 @-webkit-keyframes Animate-JS {
     from {
         width: 10px;
     }
-
     to {
-        width: 85%
+        width: 85%;
     }
 }
-
 @-moz-keyframes Animate-JS {
     from {
         width: 10px;
     }
-
     to {
-        width: 85%
+        width: 85%;
     }
 }
-
 @-o-keyframes Animate-JS {
     from {
         width: 10px;
     }
-
     to {
-        width: 85%
+        width: 85%;
     }
 }
-
 .Skill-Area {
     z-index: 1;
     float: left;
@@ -298,10 +241,7 @@ body {
     font-family: var(--font-title);
     font-size: 30px;
     font-weight: bolder;
-
-
 }
-
 .PercentText {
     z-index: 3;
     position: relative;
