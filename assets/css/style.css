@@ -44,7 +44,6 @@ body {
     box-shadow: -12px 21px 15px 3px #868686;
 }
 
-
 .picture h1 {
     color: white;
     margin-left: 0.4rem;
@@ -121,16 +120,13 @@ body {
     text-align: center;
 }
 
-.menuSeparator>img {
+.menuSeparator > img {
     display: block;
     margin: auto;
     width: 100px;
-
 }
 
 .menu {
-
-
     margin: auto;
     background-color: #fbfbfb;
     padding: 3rem;
@@ -142,7 +138,6 @@ body {
 .menu p {
     margin: 0;
 }
-
 
 h2 {
     font-size: 60px;
@@ -164,8 +159,6 @@ h2 {
     text-shadow: 2px 2px 4px var(--light-color);
 
 }
-
-
 
 a {
     font-family: var(--font-title);
@@ -281,7 +274,6 @@ svg {
     z-index: 0;
 }
 
-
 /*modal*/
 
 dialog {
@@ -310,7 +302,6 @@ dialog .close {
     background-image: url(/assets/images/tache2_sang_experience.png);
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 #formation>h1 {
@@ -327,26 +318,29 @@ dialog .close {
 }
 
 /*modal experiences*/
-#more_experiences:target {
+#more_experience:target {
     position: fixed;
     top: 100px;
     margin: auto;
     display: block;
-    width: 50%;
+    width: 80%;
+    height: 80%;
+    background-image: url(/assets/images/tache_sang_formation.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#experiences>h1 {
+#experience > h1 {
     margin: 0;
     font-family: var(--font-title);
     font-size: 22px;
     text-align: center;
 }
 
-#experiences>a {
+#experience > a {
     color: #000;
-    font-family: var(--font-title);
+    font-family: var(--font-text);
     font-size: 20px;
-
 }
 
 
@@ -361,7 +355,6 @@ dialog .close {
     background-image: url(/assets/images/sang2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 #interets>h1 {
@@ -410,8 +403,11 @@ dialog .close {
     top: 100px;
     margin: auto;
     display: block;
-    width: 55%;
-    height: 80;
+    width: 60%;
+    height: 100%;
+    background-image: url(/assets/images/sang2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #coordonnees>h1 {
@@ -439,7 +435,7 @@ dialog .close {
 
 }
 
-#contact>h1 {
+#contact > h1 {
     margin: 0;
     font-family: var(--font-title);
     font-size: 20px;
