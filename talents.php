@@ -29,5 +29,6 @@
                     <span class="PercentText ">80%</span>
                 </div>
             </div>
-            <span class="butterfly"></span>
-        </div>
+            <div class="butterflyTalent">
+                <img src="/assets/images/butterfly.png" alt="Papillon" />
+            </div>

@@ -80,7 +80,7 @@ body {
     appearance: none;
 }
 
-#ring:checked ~ .picture {
+#ring:checked~.picture {
     --image: url("/assets/images/darkhannibal.jpg");
 }
 
@@ -109,11 +109,11 @@ body {
     padding: 0;
 }
 
-#menu > li {
+#menu>li {
     text-align: center;
 }
 
-.menuSeparator > img {
+.menuSeparator>img {
     display: block;
     margin: auto;
     width: 100px;
@@ -293,14 +293,14 @@ dialog .close {
     background-size: cover;
 }
 
-#formation > h1 {
+#formation>h1 {
     margin: 0;
     font-family: var(--font-title);
     font-size: 22px;
     text-align: center;
 }
 
-#formation > a {
+#formation>a {
     color: #000;
     font-family: var(--font-title);
     font-size: 20px;
@@ -319,14 +319,14 @@ dialog .close {
     background-size: cover;
 }
 
-#experience > h1 {
+#experience>h1 {
     margin: 0;
     font-family: var(--font-title);
     font-size: 22px;
     text-align: center;
 }
 
-#experience > a {
+#experience>a {
     color: #000;
     font-family: var(--font-text);
     font-size: 20px;
@@ -345,14 +345,14 @@ dialog .close {
     background-size: cover;
 }
 
-#interets > h1 {
+#interets>h1 {
     margin: 0;
     font-family: var(--font-title);
     font-size: 22px;
     text-align: center;
 }
 
-#interets > a {
+#interets>a {
     color: #000;
     font-family: var(--font-title);
     font-size: 20px;
@@ -361,7 +361,7 @@ dialog .close {
 /*modal talents*/
 #more_talents:target {
     position: fixed;
-    top: 100px;
+    top: 70px;
     margin: auto;
     display: block;
     width: 55%;
@@ -370,16 +370,18 @@ dialog .close {
     background-position: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
+
 }
 
-#talents > h1 {
+#talents>h1 {
     margin: 0;
     font-family: var(--font-title);
     font-size: 22px;
     text-align: center;
 }
 
-#talents > a {
+#talents>a {
     color: #000;
     font-family: var(--font-title);
     font-size: 20px;
@@ -398,14 +400,14 @@ dialog .close {
     background-size: cover;
 }
 
-#coordonnees > h1 {
+#coordonnees>h1 {
     margin: 0;
     font-family: var(--font-title);
     font-size: 22px;
     text-align: center;
 }
 
-#coordonnees > a {
+#coordonnees>a {
     color: #000;
     font-family: var(--font-title);
     font-size: 20px;
@@ -422,14 +424,14 @@ dialog .close {
     z-index: 2;
 }
 
-#contact > h1 {
+#contact>h1 {
     margin: 0;
     font-family: var(--font-title);
     font-size: 20px;
     text-align: center;
 }
 
-#contact > a {
+#contact>a {
     font-family: var(--font-title);
     font-size: 18px;
     position: absolute;
