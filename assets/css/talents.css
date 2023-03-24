@@ -42,22 +42,26 @@ body {
     text-align: left;
     width: 65%;
     height: auto;
-    margin: 8rem;
+    margin: 6rem;
     background-color: #000000c9;
     border: 5px solid transparent;
     border-radius: 19px 19px 19px 19px;
     -webkit-box-shadow: 13px 11px 12px 13px rgba(156, 156, 156, 0.88);
     box-shadow: 13px 11px 12px 13px rgba(156, 156, 156, 0.88);
 
+}
 
+.butterflyTalent {
 
+    display: block;
+    margin: 30px, auto;
 
 }
 
 #SkillBox img {
-    width: 10%;
+    width: 12%;
     height: 10%;
-    margin: auto 50%;
+    margin: auto 45%;
     padding: 10px;
 }
 
@@ -294,6 +298,7 @@ body {
     font-family: var(--font-title);
     font-size: 30px;
     font-weight: bolder;
+
 
 }
 
