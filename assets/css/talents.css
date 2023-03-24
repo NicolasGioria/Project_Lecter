@@ -1,53 +1,62 @@
 :root {
-    --primary-color: #A6A6A6;
+    --primary-color: #a6a6a6;
     --secondary-color: #595959;
-    --light-color: #D9D9D9;
+    --light-color: #d9d9d9;
     --dark-color: #121212;
-  
-  
-    --font-title: ;
-    --font-text: 'Times New Roman', Times, serif;
+    --background-black: #000000c9;
+    --red-blood: hsl(0, 100%, 50%);
+    --border-shadow: 15px 8px 15px -1px rgba(0, 0, 0, 49);
+    --font-text: "Times New Roman", Times, serif;
     --font-mainTitle: "Italianno", cursive;
     --font-title: "Cormorant", serif;
     --font-text: "Libre Franklin", sans-serif;
-  
-  }
-
-body { background: #E9E5E2;margin:2%; }
-
+}
+body {
+    background: #e9e5e2;
+}
+.talentsBody > h1 {
+    font-family: var(--font-title);
+    font-size: 60px;
+    text-align: left;
+    margin: 1rem;
+}
+.textAccueil h1 {
+    font-family: var(--font-title);
+    font-size: 60px;
+    text-align: left;
+    margin: 2rem;
+    text-shadow: 2px 2px 4px var(--light-color);
+}
 #SkillBox {
-    font-size: 80px;
-    font-family: var(--font-mainTitle);
+    font-size: 60px;
+    font-family: var(--font-title);
+    font-style: --red-blood hsl(0, 100%, 41.2%);
+    text-align: left;
     width: 65%;
     height: auto;
-    margin: 40px auto;
-    background-color: #fff;
-    border: 1px solid #cdcdcd;
-    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-    padding: 10px;
-    border-radius:20px;
-    -o-border-radius:20px;
-    -webkit-border-radius:20px;
-    -ms-border-radius:20px;
-    -moz-border-radius:20px;  
-    
+    margin: 6rem;
+    background-color: #000000c9;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    box-shadow: var(--border-shadow);
 }
-
+.butterflyTalent {
+    display: block;
+    margin: 30px, auto;
+}
 #SkillBox img {
-    width: 10%;
+    width: 100px;
     height: 10%;
-    margin: auto 35%;
+    margin-left: 40%;
     padding: 10px;
 }
 .SkillBar {
     width: 90%;
     height: 50px;
     position: relative;
-    background: rgba(17, 17, 17, .3);
+    background: rgba(17, 17, 17, 0.3);
     margin: 20px auto;
-    border-radius:10px 10px;
-
+    border-radius: 10px 10px;
 }
 #Skill-HTML {
     width: 100%;
@@ -57,35 +66,42 @@ body { background: #E9E5E2;margin:2%; }
     -o-animation: Animate-HTML 4s;
     height: 50px;
     position: absolute;
-    background-color: #ea8564;
-    border-radius:10px 10px;
-
+    background-color: #cccccc;
+    border-radius: 10px 10px;
 }
 @keyframes Animate-HTML {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 100%;
+    }
 }
-to {
-    width: 100%}
-}@-webkit-keyframes Animate-HTML {
+@-webkit-keyframes Animate-HTML {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 100%;
+    }
 }
-to {
-    width: 100%}
-}@-moz-keyframes Animate-HTML {
+@-moz-keyframes Animate-HTML {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 100%;
+    }
 }
-to {
-    width: 100%}
-}@-o-keyframes Animate-HTML {
+@-o-keyframes Animate-HTML {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 100%;
+    }
 }
-to {
-    width: 100%}
-}#Skill-CSS {
+#Skill-CSS {
     animation: Animate-CSS 5s;
     -webkit-animation: Animate-CSS 5s;
     -moz-animation: Animate-CSS 5s;
@@ -93,125 +109,148 @@ to {
     width: 70%;
     height: 50px;
     position: absolute;
-    background-color: #55a69f;
-    border-radius:10px 10px;
-
+    background-color: #999999;
+    border-radius: 10px 10px;
 }
 @keyframes Animate-CSS {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 70%;
+    }
 }
-to {
-    width: 70%}
-}@-webkit-keyframes Animate-CSS {
+@-webkit-keyframes Animate-CSS {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 70%;
+    }
 }
-to {
-    width: 70%}
-}@-moz-keyframes Animate-CSS {
+@-moz-keyframes Animate-CSS {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 70%;
+    }
 }
-to {
-    width: 70%}
-}@-o-keyframes Animate-CSS {
+@-o-keyframes Animate-CSS {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 70%;
+    }
 }
-to {
-    width: 70%}
-}#Skill-jQuery {
+#Skill-jQuery {
     animation: Animate-jQuery 5s;
     -webkit-animation: Animate-jQuery 5s;
     -moz-animation: Animate-jQuery 5s;
     -o-animation: Animate-jQuery 5s;
-    width: 40%;
+    width: 90%;
     height: 50px;
     position: absolute;
-    background-color: #99856d;
-    border-radius:10px 10px;
-
+    background-color: #666666;
+    border-radius: 10px 10px;
 }
 @keyframes Animate-jQuery {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 90%;
+    }
 }
-to {
-    width: 40%}
-}@-webkit-keyframes Animate-jQuery {
+@-webkit-keyframes Animate-jQuery {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 90%;
+    }
 }
-to {
-    width: 40%}
-}@-moz-keyframes Animate-jQuery {
+@-moz-keyframes Animate-jQuery {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 90%;
+    }
 }
-to {
-    width: 40%}
-}@-o-keyframes Animate-jQuery {
+@-o-keyframes Animate-jQuery {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 90%;
+    }
 }
-to {
-    width: 40%}
-}#Skill-JS {
+#Skill-JS {
     animation: Animate-JS 4s;
     -webkit-animation: Animate-JS 4s;
     -moz-animation: Animate-JS 4s;
     -o-animation: Animate-JS 4s;
-    width: 65%;
+    width: 85%;
     height: 50px;
     position: absolute;
-    background-color: #c44e45;
-    border-radius:10px 10px;
-
+    background-color: #474545e7;
+    border-radius: 10px 10px;
 }
 @keyframes Animate-JS {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 85%;
+    }
 }
-to {
-    width: 65%}
-}@-webkit-keyframes Animate-JS {
+@-webkit-keyframes Animate-JS {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 85%;
+    }
 }
-to {
-    width: 65%}
-}@-moz-keyframes Animate-JS {
+@-moz-keyframes Animate-JS {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 85%;
+    }
 }
-to {
-    width: 65%}
-}@-o-keyframes Animate-JS {
+@-o-keyframes Animate-JS {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 85%;
+    }
 }
-to {
-    width: 65%}
-}.Skill-Area {
+.Skill-Area {
     z-index: 1;
     float: left;
-    //position: absolute;
-    margin-top: 3px;
-    margin-left: 45px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 35px;
     text-shadow: none;
-    color: #fff;
-    //font-family: Lato-Regular, sans-serif;
-    font-size: 40px;
+    color: hsl(0, 0%, 100%);
+    font-family: var(--font-title);
+    font-size: 30px;
+    font-weight: bolder;
 }
 .PercentText {
     z-index: 3;
     position: relative;
     padding-right: 15px;
-    margin-top: 15px;
+    margin-top: 8px;
     float: right;
     text-shadow: none;
-    color: #fff;
-    //font-family: Lato-Regular, sans-serif;
-    font-size: 30px;
+    color: hsl(0, 100%, 50%);
+    font-family: var(--font-title);
+    font-size: 28px;
+    font-weight: bolder;
 }

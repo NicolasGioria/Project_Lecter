@@ -1,9 +1,12 @@
 :root {
-    --primary-color: #A6A6A6;
+    --primary-color: #a6a6a6;
     --secondary-color: #595959;
-    --light-color: #D9D9D9;
+    --light-color: #d9d9d9;
     --dark-color: #121212;
+    --background-black: #000000c9;
+    --red-blood: hsl(0, 100%, 41.2%);
 
+    --border-shadow: 15px 8px 15px -1px rgba(0, 0, 0, 0.49);
 
     --font-mainTitle: "Italianno", cursive;
     --font-title: "Cormorant", serif;
@@ -13,52 +16,42 @@
     --spacing1: 1rem;
     --spacing2: 2rem;
     --spacing3: 4rem;
-
 }
 
-html, body{
-    overflow: visible;
+
+
+body {
+    background-color: #e9e5e2;
 }
 
 .container {
     display: flex;
     flex-direction: row;
     width: 90vw;
-    height: 90vh;
+    min-height: 90vh;
     margin: auto;
     margin-top: 3rem;
     margin-bottom: 3rem;
 
-    
     background-color: white;
     border-radius: 6px;
 
-    -webkit-box-shadow: -12px 21px 15px 3px #868686; 
+    -webkit-box-shadow: -12px 21px 15px 3px #868686;
     box-shadow: -12px 21px 15px 3px #868686;
-}
-
-
-button {
-    padding: 0.5rem;
-
-}
-
-.contact-button:hover {
-    background-color: darkred;
-    color: var(--light-color);
 }
 
 .picture h1 {
     color: white;
     margin-left: 0.4rem;
     margin-top: 0.1rem;
-    font-size: 60px;
-    font-family: var(--font-mainTitle);
-
+    font-size: 50px;
+    font-family: var(--font-title);
+    text-shadow: 2px 2px 4px var(--dark-color);
 }
 
 .picture {
-    background-image: url(/assets/photo/hannibal.jpg);
+    --image: url(/assets/photo/hannibal.jpg);
+    background-image: var(--image);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -68,16 +61,37 @@ button {
     position: relative;
 }
 
-.picture:hover {
-    background-image: url(/assets/images/Sans-titre-1.jpg);
-
+#ring {
+    position: absolute;
+    width: 40px;
+    bottom: 1rem;
+    left: 1rem;
+    appearance: none;
 }
 
-
-.contact-button {
+#ring:active {
     position: absolute;
+    width: 30px;
     bottom: 1rem;
-    right: 1rem;
+    left: 1rem;
+    appearance: none;
+}
+
+#ring:checked~.picture {
+    --image: url("/assets/images/darkhannibal.jpg");
+}
+
+#ring:checked ~ .picture > h1 {
+    color: rgb(160, 2, 2);
+    text-shadow: 2px 2px 4px (--dark-color);
+}
+
+#ring:checked ~ .layer > h1 {
+    color: rgb(160, 2, 2);
+}
+
+#ring:checked ~ .layer {
+    --image: url("/assets/images/bloodmenu.png");
 }
 
 .layer {
@@ -87,29 +101,27 @@ button {
 }
 
 #menu {
-
-
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-#menu li {
+#menu>li {
     text-align: center;
-    box-shadow: 0 0 4px;
-
-    height: 60px;
-    margin-bottom: 1rem;
 }
 
+.menuSeparator>img {
+    display: block;
+    margin: auto;
+    width: 100px;
+}
 
 .menu {
-
-  
     margin: auto;
     background-color: #fbfbfb;
     padding: 3rem;
-    border: 1px solid;
+    background-image: url(/assets/images/11.jpg);
+    /*transform: rotate(3deg);*/
 }
 
 .menu p {
@@ -122,34 +134,27 @@ h2 {
     margin: 10px;
     font-family: var(--font-mainTitle);
     text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.12);
-}
-
-h3 {
-
-    margin: 0;
-    font-family: var(--font-text)
+    text-shadow: 2px 2px 4px var(--light-color);
 }
 
 .layer h1 {
     text-align: right;
     margin-right: 1rem;
-    font-size: 60px;
-    font-family: var(--font-mainTitle);
-    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+    font-size: 50px;
+    font-family: var(--font-title);
     margin-bottom: 0;
     margin-top: 0;
-}
-
-.social-media {
-    flex-direction: row;
-    align-items: right;
+    text-shadow: 2px 2px 4px var(--light-color);
 }
 
 a {
     font-family: var(--font-title);
     font-size: 20px;
     text-decoration: none;
+}
 
+svg {
+    color: var(--dark-color);
 }
 
 /*---------------------------------------------ASSIETTE---------------------------------*/
@@ -219,17 +224,32 @@ a {
     flex-direction: column;
     width: 50%;
     position: relative;
-    background-image: url(/assets/images/pngegg\ \(7\).png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: var(--image, none);
 }
 
 .menu {
-  width: 50%;
+    width: 50%;
     padding: 3rem;
-    border: 1px solid;
+    padding-top: 1rem;
+    padding-bottom: 0;
     position: relative;
     z-index: 1;
+    box-shadow: 15px 8px 15px -1px rgba(71, 71, 71, 0.49);
+}
+
+.logo > img {
+    display: flex;
+    margin: auto;
+    width: 70px;
+    margin-top: 1rem;
+}
+
+.menu > .goutte > img {
+    display: flex;
+    width: 100px;
+    margin: 0;
 }
 
 .plate {
@@ -247,8 +267,8 @@ dialog {
     max-height: 80vh;
     box-shadow: 0 0 100vmax 100vmax rgba(0, 0, 0, 0.8);
     overflow: auto;
+    border-radius: 10px;
 }
-
 
 dialog .close {
     position: absolute;
@@ -263,41 +283,49 @@ dialog .close {
     top: 100px;
     margin: auto;
     display: block;
-    width: 50%;
+    width: 65%;
+    height: 80%;
+    background-image: url(/assets/images/tache2_sang_experience.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #formation>h1 {
     margin: 0;
     font-family: var(--font-title);
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
 }
 
 #formation>a {
     color: #000;
-    font-family: var(--font-text);
+    font-family: var(--font-title);
     font-size: 20px;
 }
 
 /*modal experiences*/
-#more_experiences:target {
+#more_experience:target {
     position: fixed;
     top: 100px;
     margin: auto;
     display: block;
-    width: 50%;
+    width: 70%;
+    height: 80%;
+    background-image: url(/assets/images/tracesang.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#experiences>h1 {
+#experience>h1 {
     margin: 0;
     font-family: var(--font-title);
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
 }
 
-#experiences>a {
+#experience>a {
     color: #000;
-    font-family: var(--font-text);
+    font-family: var(--font-title);
     font-size: 20px;
 }
 
@@ -307,62 +335,156 @@ dialog .close {
     top: 100px;
     margin: auto;
     display: block;
-    width: 50%;
+    width: 55%;
+    height: 80%;
+    background-image: url(/assets/images/sang2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #interets>h1 {
     margin: 0;
     font-family: var(--font-title);
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
 }
 
 #interets>a {
     color: #000;
-    font-family: var(--font-text);
+    font-family: var(--font-title);
     font-size: 20px;
 }
 
 /*modal talents*/
 #more_talents:target {
     position: fixed;
-    top: 100px;
+    top: 70px;
     margin: auto;
     display: block;
-    width: 50%;
+    width: 55%;
+    height: 80%;
+    background-image: url(/assets/images/bloodmenu.png);
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
 }
 
 #talents>h1 {
     margin: 0;
     font-family: var(--font-title);
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
 }
 
 #talents>a {
     color: #000;
-    font-family: var(--font-text);
+    font-family: var(--font-title);
     font-size: 20px;
 }
 
 /*modal coordonnees*/
-#more_coordonnees:target {
+#more_coordonnee:target {
     position: fixed;
     top: 100px;
     margin: auto;
     display: block;
-    width: 50%;
+    width: 60%;
+    height: 100%;
+    background-image: url(/assets/images/sang2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#coordonnees>h1 {
+#coordonnee>h1 {
+    margin: 0;
+    font-family: var(--font-title);
+    font-size: 22px;
+    text-align: center;
+}
+
+#coordonnee>a {
+    color: #000;
+    font-family: var(--font-title);
+    font-size: 20px;
+}
+
+/*modal contact*/
+#more_contact:target {
+    position: fixed;
+    top: 100px;
+    margin: auto;
+    display: block;
+    width: 55%;
+    height: 80;
+    z-index: 2;
+}
+
+#contact>h1 {
     margin: 0;
     font-family: var(--font-title);
     font-size: 20px;
     text-align: center;
 }
 
-#coordonnees>a {
-    color: #000;
-    font-family: var(--font-text);
-    font-size: 20px;
+#contact>a {
+    font-family: var(--font-title);
+    font-size: 18px;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    box-shadow: 1px 1px 4px var(--secondary-color);
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    padding: 0.5rem;
+    text-shadow: 2px 2px 4px var(--light-color);
 }
+
+@media screen and (max-width: 1300px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+  .container>div {
+    width: 100%;
+    height: 90vh;
+  }
+
+  #more_experience:target {
+    width: 100%;
+  }
+
+  #more_formation:target {
+    width: 100%;
+  }
+
+  #more_interets:target {
+    width: 100%;
+  }
+
+  #more_talents:target {
+    width: 100%;
+  }
+
+  #more_coordonnee:target {
+    width: 100%;
+  }
+
+  #more_contact:target {
+    width: 100%;
+  }
+    
+  .menu {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+.plate { 
+    display: none;
+}
+
+}
+
