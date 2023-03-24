@@ -156,11 +156,13 @@ require 'experienceData.php';
               </dialog>
             </section>
           </li>
-        </ul> 
-         
-        <div class="logo"> <img src="/assets/images/butterfly.png" alt="Papillon"/></div>       
-            
-        <div class="goutte"><img src="/assets/images/goutte.png" alt="Goutte de sang"/></div>
+        </ul>
+        <div class="logo"> <img src="/assets/images/butterfly.png" alt="Papillon" /></div>
+        <div class="goutte"><img src="/assets/images/goutte.png" alt="Goutte de sang" /></div>
+
+
+
+
       </div>
       <div class="plate">
         <span class="inner_plate"></span>

@@ -311,7 +311,7 @@ dialog .close {
     display: block;
     width: 70%;
     height: 80%;
-    background-image: url(/assets/images/tache_sang_formation.png);
+    background-image: url(/assets/images/tracesang.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -392,7 +392,7 @@ dialog .close {
     display: block;
     width: 60%;
     height: 100%;
-    background-image: url(/assets/images/sangCoordonnee.jpg);
+    background-image: url(/assets/images/sang2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
