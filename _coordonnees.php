@@ -9,12 +9,12 @@
                         <span itemprop="telephone">
                               <a href="tel:+18506484200"> 850-648-4200 </a></span>
                   </div>
-                  <p><img src="/assets/images/tilde.jpeg" /></p>
+                  <p><img src="/assets/images/tilde2.png" /></p>
                   <div class="mail">
                         <i class="fa-solid fa-envelope fa-1x"></i><br>
                         <span>drhannibalLecter@outlook.com</span>
                   </div>
-                  <p><img src="/assets/images/tilde.jpeg" /></p>
+                  <p><img src="/assets/images/tilde2.png" /></p>
                   <div class="adresse">
                         <i class="fa-solid fa-location-dot fa-1x"></i><br>
                         <span>Baltimore State Hospital for the Criminally Insane
