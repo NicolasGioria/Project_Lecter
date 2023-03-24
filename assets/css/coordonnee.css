@@ -22,7 +22,7 @@
 }
 .coordonnee {
     margin: 0rem 8rem;
-    padding: 3rem 2rem 1rem 2rem;
+    padding: 1.5rem 2rem 1rem 2rem;
     background-color: #fff;
     font-family: var(--font-text);
     border-radius: 10px;
@@ -31,6 +31,11 @@
 .coordonneeBody {
     display: flex;
     gap: 70px;
+    box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.45),
+        inset 5px 5px 9px rgba(94, 104, 121, 0.3);
+    border-radius: 15px;
+    background-color: rgb(227, 227, 227);
+    padding-bottom: 10px;
 }
 
 .coordonneeLeft {
@@ -41,6 +46,7 @@
     flex-direction: column;
     gap: 7px;
     width: 40%;
+    padding-top: 10px;
 }
 .telephone a {
     color: black;
@@ -51,7 +57,12 @@
     gap: 10%;
     width: 40%;
 }
-
+.plan {
+    margin-top: 10px;
+}
+iframe {
+    border-radius: 10px;
+}
 .reseaux ul {
     display: flex;
     justify-content: space-around;
