@@ -33,15 +33,15 @@ $experienceData = [
             'description' => 'Propriétaire et chef du restaurant étoilé Michelin, "Le Silence des Agneaux"'
       ],
       [
-            'date' => '2005-2015',
+            'date' => '2005 - 2015',
             'description' => 'Écrivain à succès de livres de cuisine et de psychologie'
       ],
       [
-            'date' => '2016-2018',
+            'date' => '2016 - 2018',
             'description' => 'Membre de la Commission américaine pour la ré-introduction des cours de cuisine en milieu carcéral'
       ],
       [
-            'date' => '2019-2023',
+            'date' => '2019 - 2023',
             'description' => 'Youtubeur, chaîne sur les cours de cuisine "exotique"'
       ],
 ];
