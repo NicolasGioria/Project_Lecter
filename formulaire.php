@@ -52,29 +52,31 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <div class="container">
         <?php if ($_SERVER["REQUEST_METHOD"] === "GET" || ($_SERVER["REQUEST_METHOD"] === "POST" && !empty($errors))) : ?>
             <h1><i>Séduits</i> ? <br> Faites-le moi savoir...</h1>
-                <form action="/formulaire.php" method="POST">
-                    <?php if (!empty($errors)) : ?>
-                        <ul>
-                            <?php foreach ($errors as $error) : ?>
-                                <li><?= $error ?></li>
-                            <?php endforeach ?>
-                        </ul>
-                    <?php endif ?>
-                    <label for="name">Nom & prénom</label>
-                    <input type="text" value="<?= $_POST["name"] ?? '' ?>" id="name" name="name" placeholder="Vos nom et prénom" required>
+            <form action="/formulaire.php" method="POST">
+                <?php if (!empty($errors)) : ?>
+                    <ul>
+                        <?php foreach ($errors as $error) : ?>
+                            <li><?= $error ?></li>
+                        <?php endforeach ?>
+                    </ul>
+                <?php endif ?>
+                <label for="name">Nom & prénom</label>
+                <input type="text" value="<?= $_POST["name"] ?? '' ?>" id="name" name="name" placeholder="Vos nom et prénom" required>
 
-                    <label for="subject">Sujet</label>
-                    <input type="text" value="<?= $_POST["subject"] ?? '' ?>" id="subject" name="subject" placeholder="L'objet de votre message" required>
+                <label for="subject">Sujet</label>
+                <input type="text" value="<?= $_POST["subject"] ?? '' ?>" id="subject" name="subject" placeholder="L'objet de votre message" required>
 
-                    <label for="emailAddress">Email</label>
-                    <input id="emailAddress" type="email" value="<?= $_POST["email"] ?? '' ?>" name="email" placeholder="Votre email" required>
+                <label for="emailAddress">Email</label>
+                <input id="emailAddress" type="email" value="<?= $_POST["email"] ?? '' ?>" name="email" placeholder="Votre email" required>
 
-                    <label for="comment">Message</label>
-                    <textarea id="subject" name="comment" placeholder="Laissez moi un petit mot..." style="height:150px" required><?= $_POST["comment"] ?? '' ?></textarea>
+                <label for="comment">Message</label>
+                <textarea id="subject" name="comment" placeholder="Laissez moi un petit mot..." style="height:150px" required><?= $_POST["comment"] ?? '' ?></textarea>
 
-                    <button>Envoyer</button>
-                </form>
-                <a href="index.php">X</a>
+                <button>Envoyer</button>
+            </form>
+            <a href="index.php">X</a>
+
+            <div class="mask"> <img src="/assets/images/masque.png" alt="Masque" /></div>
 
         <?php else : ?>
             <p>Merci pour votre délicieux message.</p>
@@ -100,4 +102,5 @@ Si en post, pas d'erreur, ne PAS AFFICHER LE formulaire mais "message bien envoy
     3) - arrivée formulaire / soumission données en post / soit erreurs et recharg. formulaire prérempli / soit pas erreur et message OK. -->
 
 </body>
+
 </html>
