@@ -1,7 +1,7 @@
 <div class="talentsBody">
     <h1>Mes quelques Talents...</h1>
     <center>
-        <div id="SkillBox">
+        <div id="SkillBogit x">
             <div class="SkillBar">
                 <div id="Skill-HTML">
                     <span class="Skill-Area ">Relationnel</span>
