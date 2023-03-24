@@ -24,7 +24,8 @@ body {
 }
 
 body {
-   background-color: #E9E5E2;
+
+    background-color: #E9E5E2;
 }
 
 .container {
@@ -50,6 +51,8 @@ body {
     margin-top: 0.1rem;
     font-size: 50px;
     font-family: var(--font-title);
+    text-shadow: 2px 2px 4px var(--dark-color);
+
 }
 
 .picture {
@@ -71,6 +74,7 @@ body {
     left: 1rem;
     appearance: none;
 }
+
 #ring:active {
     position: absolute;
     width: 30px;
@@ -79,16 +83,27 @@ body {
     appearance: none;
 }
 
-#ring:checked ~ .picture {
+#ring:checked~.picture {
     --image: url('/assets/images/darkhannibal.jpg');
-  
 
 }
 
-#ring:checked ~ .layer {
+#ring:checked~.picture>h1 {
+    color: rgb(160, 2, 2);
+    text-shadow: 2px 2px 4px (--dark-color);
+
+
+}
+
+#ring:checked~.layer>h1 {
+    color: rgb(160, 2, 2);
+}
+
+#ring:checked~.layer {
     --image: url('/assets/images/bloodmenu.png');
 
 }
+
 
 .layer {
     display: flex;
@@ -102,17 +117,14 @@ body {
     padding: 0;
 }
 
-#menu > li {
+#menu>li {
     text-align: center;
-
-    height: 60px;
 }
 
-.menuSeparator>img{
+.menuSeparator>img {
     display: block;
     margin: auto;
     width: 100px;
-
 
 }
 
@@ -124,6 +136,7 @@ body {
     padding: 3rem;
     background-image: url(/assets/images/11.jpg);
     /*transform: rotate(3deg);*/
+
 }
 
 .menu p {
@@ -137,11 +150,8 @@ h2 {
     margin: 10px;
     font-family: var(--font-mainTitle);
     text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.12);
-}
+    text-shadow: 2px 2px 4px var(--light-color);
 
-h3 {
-    margin: 0;
-    font-family: var(--font-text);
 }
 
 .layer h1 {
@@ -151,6 +161,8 @@ h3 {
     font-family: var(--font-title);
     margin-bottom: 0;
     margin-top: 0;
+    text-shadow: 2px 2px 4px var(--light-color);
+
 }
 
 
@@ -161,6 +173,9 @@ a {
     text-decoration: none;
 }
 
+svg {
+    color: var(--dark-color);
+}
 
 /*---------------------------------------------ASSIETTE---------------------------------*/
 .plate {
@@ -245,10 +260,17 @@ a {
 }
 
 .logo>img {
-    display: block;
+    display: flex;
     margin: auto;
-    width: 80px;
-    margin-bottom: 1rem;
+    width: 70px;
+    margin-top: 1rem;
+}
+
+.menu>.goutte>img {
+    display: flex;
+    width: 100px;
+    margin: 0;
+
 }
 
 .plate {
@@ -283,7 +305,7 @@ dialog .close {
     top: 100px;
     margin: auto;
     display: block;
-    width: 80%;
+    width: 65%;
     height: 80%;
     background-image: url(/assets/images/tache2_sang_experience.png);
     background-repeat: no-repeat;
@@ -291,16 +313,16 @@ dialog .close {
 
 }
 
-#formation > h1 {
+#formation>h1 {
     margin: 0;
     font-family: var(--font-title);
-    font-size: 24px;
+    font-size: 22px;
     text-align: center;
 }
 
-#formation > a {
+#formation>a {
     color: #000;
-    font-family: var(--font-text);
+    font-family: var(--font-title);
     font-size: 20px;
 }
 
@@ -313,19 +335,20 @@ dialog .close {
     width: 50%;
 }
 
-#experiences > h1 {
+#experiences>h1 {
     margin: 0;
     font-family: var(--font-title);
-    font-size: 24px;
+    font-size: 22px;
     text-align: center;
 }
 
-#experiences > a {
+#experiences>a {
     color: #000;
-    font-family: var(--font-text);
-    font-size: 20px;    
+    font-family: var(--font-title);
+    font-size: 20px;
 
 }
+
 
 /*modal interets*/
 #more_interets:target {
@@ -333,7 +356,7 @@ dialog .close {
     top: 100px;
     margin: auto;
     display: block;
-    width: 60%;
+    width: 55%;
     height: 80%;
     background-image: url(/assets/images/sang2.jpg);
     background-repeat: no-repeat;
@@ -341,16 +364,16 @@ dialog .close {
 
 }
 
-#interets > h1 {
+#interets>h1 {
     margin: 0;
     font-family: var(--font-title);
-    font-size: 24px;
+    font-size: 22px;
     text-align: center;
 }
 
-#interets > a {
+#interets>a {
     color: #000;
-    font-family: var(--font-text);
+    font-family: var(--font-title);
     font-size: 20px;
 }
 
@@ -360,7 +383,7 @@ dialog .close {
     top: 100px;
     margin: auto;
     display: block;
-    width: 50%;
+    width: 55%;
     height: 80%;
     background-image: url(/assets/images/bloodmenu.png);
     background-position: fixed;
@@ -368,16 +391,16 @@ dialog .close {
     background-repeat: no-repeat;
 }
 
-#talents > h1 {
+#talents>h1 {
     margin: 0;
     font-family: var(--font-title);
-    font-size: 24px;
+    font-size: 22px;
     text-align: center;
 }
 
-#talents > a {
+#talents>a {
     color: #000;
-    font-family: var(--font-text);
+    font-family: var(--font-title);
     font-size: 20px;
 }
 
@@ -387,19 +410,20 @@ dialog .close {
     top: 100px;
     margin: auto;
     display: block;
-    width: 50%;
+    width: 55%;
+    height: 80;
 }
 
-#coordonnees > h1 {
+#coordonnees>h1 {
     margin: 0;
     font-family: var(--font-title);
-    font-size: 24px;
+    font-size: 22px;
     text-align: center;
 }
 
-#coordonnees > a {
+#coordonnees>a {
     color: #000;
-    font-family: var(--font-text);
+    font-family: var(--font-title);
     font-size: 20px;
 }
 
@@ -409,9 +433,10 @@ dialog .close {
     top: 100px;
     margin: auto;
     display: block;
-    width: 50%;
-    z-index:2;
-    
+    width: 55%;
+    height: 80;
+    z-index: 2;
+
 }
 
 #contact>h1 {
@@ -422,16 +447,135 @@ dialog .close {
 }
 
 #contact>a {
-    
+
     font-family: var(--font-title);
     font-size: 18px;
     position: absolute;
     bottom: 1rem;
     right: 1rem;
-    border: 1px solid white;
+    box-shadow: 1px 1px 4px var(--secondary-color);
     background-color: var(--light-color);
     color: var(--dark-color);
     padding: 0.5rem;
+    text-shadow: 2px 2px 4px var(--light-color);
+
+}
+
+@media screen and (max-width: 1300px) {
+
+    html,
+    body {
+        overflow: scroll;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: auto;
+        width: 100vw;
+
+
+    }
+
+    h1 {
+        font-size: 40px;
+        margin: 0;
+
+
+    }
+
+    .picture {
+        background-image: none;
+    }
+
+    h1>.picture {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .layer {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .menu {
+        padding: 2rem;
+        width: 50%;
+    }
+
+    .plate {
+        padding: 40px;
+        margin: 10px;
+    }
+
+    .inner_plate {
+        padding: 100px;
+    }
+
+
+    .layer h1 {
+        font-size: 30px;
+        text-align: left;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+    .interetsBody {
+        width: 100%;
+        margin: 0;
+    }
+
+    #more_formation:target {
+        width: 100%;
+    }
+
+    #more_experiences:target {
+        width: 100%;
+    }
+
+    #more_interets:target {
+        width: 100%;
+    }
+    
+    #more_talent:target {
+        width: 100%;
+    }
+    #more_coordonnees:target {
+        width: 100%;
+
+    }
+
+    #more_contact:target {
+        width: 100%;
+    }
+    
+    
     
 }
 
+@media screen and (max-width: 800px) {
+    .menu {
+        padding: 2rem;
+        width: 80%;
+    }
+
+    .plate {
+        display: none;
+    }
+
+    .container {
+        margin: 0;
+    }
+}
