@@ -162,7 +162,6 @@ require 'experienceData.php';
 
 
 
-
       </div>
       <div class="plate">
         <span class="inner_plate"></span>
